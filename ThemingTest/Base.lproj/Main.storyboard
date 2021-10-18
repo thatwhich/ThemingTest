@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yBO-GN-Ed0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,35 +8,84 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Главная-->
+        <scene sceneID="n4o-XT-WSY">
+            <objects>
+                <viewController id="j1r-z9-H0d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0H2-mq-LmH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dDd-cU-6LT"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="ico_home" selectedImage="ico_home_act" id="FbF-Dw-MC3">
+                        <color key="badgeColor" red="0.0" green="0.16862745100000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzD-bR-Zx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988" y="807"/>
+        </scene>
+        <!--Стастистика-->
+        <scene sceneID="vTK-hN-ZUD">
+            <objects>
+                <viewController id="QkJ-7t-odg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E7F-3x-I7r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="y0F-XZ-e8X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Стастистика" image="ico_stat" id="1FS-td-YGb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lq7-IT-beY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="807"/>
+        </scene>
+        <!--Мои досары-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThemingTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" backgroundImage="ques1-1" translatesAutoresizingMaskIntoConstraints="NO" id="SF8-VE-alB">
-                                <rect key="frame" x="0.0" y="534" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="qKP-9e-mTw"/>
-                                    <tabBarItem systemItem="more" id="9lT-Ly-a19"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Мои досары" image="ico_dosar" selectedImage="ico_dosar_act" id="4Po-qx-q6I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="78"/>
+            <point key="canvasLocation" x="35" y="807"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vZw-36-V4w">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yBO-GN-Ed0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="bcV-H1-TNZ" customClass="TabBarWithCorners" customModule="ThemingTest" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.0" green="0.1686274707" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j1r-z9-H0d" kind="relationship" relationship="viewControllers" id="Wuz-kD-tF6"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="vrs-kY-I15"/>
+                        <segue destination="QkJ-7t-odg" kind="relationship" relationship="viewControllers" id="lzb-NP-7W2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0Z-aC-8dV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ques1-1" width="516" height="134"/>
+        <image name="ico_dosar" width="24" height="24"/>
+        <image name="ico_dosar_act" width="24" height="24"/>
+        <image name="ico_home" width="24" height="24"/>
+        <image name="ico_home_act" width="24" height="24"/>
+        <image name="ico_stat" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
