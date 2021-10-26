@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yBO-GN-Ed0">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -25,37 +25,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZR-v9-15g">
-                                <rect key="frame" x="20" y="110" width="374" height="255"/>
+                                <rect key="frame" x="20" y="110" width="374" height="245"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="№ досара" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6c-Kf-fFZ" userLabel="dosar fld">
-                                        <rect key="frame" x="20" y="148" width="156" height="34"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год подачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uew-1P-zZg" userLabel="year fld">
-                                        <rect key="frame" x="202" y="147" width="156" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнать статус досара по номеру" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-jA-z1D">
-                                        <rect key="frame" x="40" y="59.5" width="294" height="28.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнать статус досара по номеру" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-jA-z1D" userLabel="form header lbl">
+                                        <rect key="frame" x="40" y="59.333333333333336" width="294" height="28.666666666666664"/>
                                         <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="24"/>
                                         <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="highlightedColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер досара" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cic-V6-bUw">
-                                        <rect key="frame" x="20" y="108" width="155" height="16.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер досара" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cic-V6-bUw" userLabel="dosar lbl">
+                                        <rect key="frame" x="20" y="113" width="155" height="16.333333333333343"/>
                                         <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzG-vG-OlK">
-                                        <rect key="frame" x="106" y="213" width="180" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите год подачи" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-hF-Cls" userLabel="year lbl">
+                                        <rect key="frame" x="220.66666666666663" y="113" width="133.33333333333337" height="17"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="№ досара" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6c-Kf-fFZ" userLabel="dosar fld">
+                                        <rect key="frame" x="20" y="136.33333333333334" width="155" height="34"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год подачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-PD-Psr" userLabel="year fld">
+                                        <rect key="frame" x="220.66666666666663" y="137" width="133.33333333333337" height="34"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzG-vG-OlK">
+                                        <rect key="frame" x="99.666666666666686" y="191" width="175" height="34"/>
                                         <color key="backgroundColor" red="0.9882352941176471" green="0.81960784313725488" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="cTi-Yz-jJR"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
                                         <color key="tintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Узнать статус приказа">
@@ -68,24 +76,32 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите год подачи" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="XTg-61-8bf">
-                                        <rect key="frame" x="202" y="108" width="134" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.1686274707" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="cic-V6-bUw" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="20" id="63U-No-zA7"/>
+                                    <constraint firstItem="eIt-hF-Cls" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cic-V6-bUw" secondAttribute="trailing" constant="10" id="5bD-ZI-piu"/>
+                                    <constraint firstAttribute="bottom" secondItem="vzG-vG-OlK" secondAttribute="bottom" constant="20" id="8Mi-gD-NBv"/>
+                                    <constraint firstItem="vzG-vG-OlK" firstAttribute="height" secondItem="I6c-Kf-fFZ" secondAttribute="height" id="9fc-zX-IId"/>
+                                    <constraint firstItem="vzG-vG-OlK" firstAttribute="centerX" secondItem="KZR-v9-15g" secondAttribute="centerX" id="B8A-XT-v2v"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="top" secondItem="cic-V6-bUw" secondAttribute="bottom" constant="7" id="CSm-9h-gPr"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIt-hF-Cls" secondAttribute="trailing" constant="20" id="Cmt-5Y-iX4"/>
+                                    <constraint firstItem="vzG-vG-OlK" firstAttribute="top" secondItem="MJU-PD-Psr" secondAttribute="bottom" constant="20" id="CtB-y3-TT2"/>
+                                    <constraint firstItem="eIt-hF-Cls" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="25" id="D9V-fa-hRM"/>
                                     <constraint firstItem="RlE-jA-z1D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KZR-v9-15g" secondAttribute="leading" constant="40" id="I0s-5o-Tev"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RlE-jA-z1D" secondAttribute="trailing" constant="40" id="OVq-Us-0f3"/>
+                                    <constraint firstItem="MJU-PD-Psr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="I6c-Kf-fFZ" secondAttribute="trailing" constant="10" id="T3z-LF-4dR"/>
                                     <constraint firstItem="RlE-jA-z1D" firstAttribute="centerX" secondItem="KZR-v9-15g" secondAttribute="centerX" id="UaX-2R-gW2"/>
-                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="leading" secondItem="cic-V6-bUw" secondAttribute="leading" id="bej-3a-85m"/>
-                                    <constraint firstItem="cic-V6-bUw" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="gUC-H6-Egv"/>
-                                    <constraint firstAttribute="height" constant="255" id="jrA-gR-mPM"/>
+                                    <constraint firstItem="cic-V6-bUw" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="25" id="dqi-vc-ImP"/>
+                                    <constraint firstItem="vzG-vG-OlK" firstAttribute="height" secondItem="MJU-PD-Psr" secondAttribute="height" id="fUc-6b-xnK"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="iIA-z9-fhc"/>
+                                    <constraint firstItem="cic-V6-bUw" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="jTF-h9-tqA"/>
+                                    <constraint firstItem="MJU-PD-Psr" firstAttribute="top" secondItem="eIt-hF-Cls" secondAttribute="bottom" constant="7" id="l8x-dF-wh6"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="width" secondItem="cic-V6-bUw" secondAttribute="width" id="nFr-rX-l2p"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="qbm-ke-fez"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="height" secondItem="MJU-PD-Psr" secondAttribute="height" id="rFo-qY-cVq"/>
+                                    <constraint firstItem="MJU-PD-Psr" firstAttribute="width" secondItem="eIt-hF-Cls" secondAttribute="width" id="tlk-Uc-Tuq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="xC7-Bi-muW"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJU-PD-Psr" secondAttribute="trailing" constant="20" id="yok-LS-Asz"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -98,7 +114,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="logo_universal" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-tn-nVb">
-                                <rect key="frame" x="140" y="35" width="134" height="134.5"/>
+                                <rect key="frame" x="139.66666666666669" y="35" width="134.66666666666669" height="134.33333333333334"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="CcN-tn-nVb" secondAttribute="height" multiplier="1:1" id="yvp-Ax-lzS"/>
                                 </constraints>
@@ -107,16 +123,17 @@
                         <viewLayoutGuide key="safeArea" id="dDd-cU-6LT"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KZR-v9-15g" firstAttribute="leading" secondItem="dDd-cU-6LT" secondAttribute="leading" constant="20" id="1ZW-A2-UOq"/>
                             <constraint firstItem="Pod-f2-6zs" firstAttribute="centerX" secondItem="dDd-cU-6LT" secondAttribute="centerX" id="8MM-fG-em0"/>
                             <constraint firstItem="Pod-f2-6zs" firstAttribute="height" secondItem="0H2-mq-LmH" secondAttribute="height" multiplier="0.100446" id="9XH-1J-7yy"/>
                             <constraint firstItem="KZR-v9-15g" firstAttribute="top" secondItem="Pod-f2-6zs" secondAttribute="bottom" constant="20" id="E4A-9n-35x"/>
                             <constraint firstItem="Pod-f2-6zs" firstAttribute="leading" secondItem="dDd-cU-6LT" secondAttribute="leading" id="OKD-V4-JxQ"/>
+                            <constraint firstItem="KZR-v9-15g" firstAttribute="centerX" secondItem="0H2-mq-LmH" secondAttribute="centerX" id="WHo-lu-kUi"/>
+                            <constraint firstItem="dDd-cU-6LT" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KZR-v9-15g" secondAttribute="trailing" constant="20" id="X40-2s-Myy"/>
                             <constraint firstItem="Pod-f2-6zs" firstAttribute="top" secondItem="0H2-mq-LmH" secondAttribute="top" id="dPX-wJ-bcl"/>
                             <constraint firstItem="CcN-tn-nVb" firstAttribute="height" secondItem="0H2-mq-LmH" secondAttribute="height" multiplier="0.15" id="eoe-Dn-ILJ"/>
                             <constraint firstItem="CcN-tn-nVb" firstAttribute="centerX" secondItem="0H2-mq-LmH" secondAttribute="centerX" id="gij-WE-Hun"/>
                             <constraint firstItem="RlE-jA-z1D" firstAttribute="top" secondItem="CcN-tn-nVb" secondAttribute="bottom" id="jdU-yh-OXn" userLabel="lable text"/>
-                            <constraint firstItem="KZR-v9-15g" firstAttribute="centerX" secondItem="0H2-mq-LmH" secondAttribute="centerX" id="mgl-KD-Zqj"/>
+                            <constraint firstItem="KZR-v9-15g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dDd-cU-6LT" secondAttribute="leading" constant="20" id="wxK-wx-rIz"/>
                             <constraint firstItem="CcN-tn-nVb" firstAttribute="top" secondItem="Pod-f2-6zs" secondAttribute="top" constant="35" id="yw7-uJ-FKL"/>
                         </constraints>
                     </view>
