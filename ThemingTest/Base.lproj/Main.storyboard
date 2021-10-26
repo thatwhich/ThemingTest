@@ -7,6 +7,14 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Главная-->
         <scene sceneID="n4o-XT-WSY">
@@ -15,8 +23,102 @@
                     <view key="view" contentMode="scaleToFill" id="0H2-mq-LmH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZR-v9-15g">
+                                <rect key="frame" x="20" y="110" width="374" height="255"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="№ досара" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6c-Kf-fFZ" userLabel="dosar fld">
+                                        <rect key="frame" x="20" y="148" width="156" height="34"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год подачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uew-1P-zZg" userLabel="year fld">
+                                        <rect key="frame" x="202" y="147" width="156" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Узнать статус досара по номеру" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="RlE-jA-z1D">
+                                        <rect key="frame" x="40" y="59.5" width="294" height="28.5"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="24"/>
+                                        <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер досара" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cic-V6-bUw">
+                                        <rect key="frame" x="20" y="108" width="155" height="16.5"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzG-vG-OlK">
+                                        <rect key="frame" x="106" y="213" width="180" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.9882352941176471" green="0.81960784313725488" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                        <color key="tintColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Узнать статус приказа">
+                                            <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Введите год подачи" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="XTg-61-8bf">
+                                        <rect key="frame" x="202" y="108" width="134" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.1686274707" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="cic-V6-bUw" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="20" id="63U-No-zA7"/>
+                                    <constraint firstItem="RlE-jA-z1D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KZR-v9-15g" secondAttribute="leading" constant="40" id="I0s-5o-Tev"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RlE-jA-z1D" secondAttribute="trailing" constant="40" id="OVq-Us-0f3"/>
+                                    <constraint firstItem="RlE-jA-z1D" firstAttribute="centerX" secondItem="KZR-v9-15g" secondAttribute="centerX" id="UaX-2R-gW2"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="leading" secondItem="cic-V6-bUw" secondAttribute="leading" id="bej-3a-85m"/>
+                                    <constraint firstItem="cic-V6-bUw" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="gUC-H6-Egv"/>
+                                    <constraint firstAttribute="height" constant="255" id="jrA-gR-mPM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header line" translatesAutoresizingMaskIntoConstraints="NO" id="Pod-f2-6zs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="logo_universal" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-tn-nVb">
+                                <rect key="frame" x="140" y="35" width="134" height="134.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CcN-tn-nVb" secondAttribute="height" multiplier="1:1" id="yvp-Ax-lzS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dDd-cU-6LT"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KZR-v9-15g" firstAttribute="leading" secondItem="dDd-cU-6LT" secondAttribute="leading" constant="20" id="1ZW-A2-UOq"/>
+                            <constraint firstItem="Pod-f2-6zs" firstAttribute="centerX" secondItem="dDd-cU-6LT" secondAttribute="centerX" id="8MM-fG-em0"/>
+                            <constraint firstItem="Pod-f2-6zs" firstAttribute="height" secondItem="0H2-mq-LmH" secondAttribute="height" multiplier="0.100446" id="9XH-1J-7yy"/>
+                            <constraint firstItem="KZR-v9-15g" firstAttribute="top" secondItem="Pod-f2-6zs" secondAttribute="bottom" constant="20" id="E4A-9n-35x"/>
+                            <constraint firstItem="Pod-f2-6zs" firstAttribute="leading" secondItem="dDd-cU-6LT" secondAttribute="leading" id="OKD-V4-JxQ"/>
+                            <constraint firstItem="Pod-f2-6zs" firstAttribute="top" secondItem="0H2-mq-LmH" secondAttribute="top" id="dPX-wJ-bcl"/>
+                            <constraint firstItem="CcN-tn-nVb" firstAttribute="height" secondItem="0H2-mq-LmH" secondAttribute="height" multiplier="0.15" id="eoe-Dn-ILJ"/>
+                            <constraint firstItem="CcN-tn-nVb" firstAttribute="centerX" secondItem="0H2-mq-LmH" secondAttribute="centerX" id="gij-WE-Hun"/>
+                            <constraint firstItem="RlE-jA-z1D" firstAttribute="top" secondItem="CcN-tn-nVb" secondAttribute="bottom" id="jdU-yh-OXn" userLabel="lable text"/>
+                            <constraint firstItem="KZR-v9-15g" firstAttribute="centerX" secondItem="0H2-mq-LmH" secondAttribute="centerX" id="mgl-KD-Zqj"/>
+                            <constraint firstItem="CcN-tn-nVb" firstAttribute="top" secondItem="Pod-f2-6zs" secondAttribute="top" constant="35" id="yw7-uJ-FKL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главная" image="ico_home" selectedImage="ico_home_act" id="FbF-Dw-MC3">
                         <color key="badgeColor" red="0.0" green="0.16862745100000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -24,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzD-bR-Zx3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-988" y="807"/>
+            <point key="canvasLocation" x="-988.40579710144937" y="806.91964285714278"/>
         </scene>
         <!--Стастистика-->
         <scene sceneID="vTK-hN-ZUD">
@@ -64,6 +166,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="yBO-GN-Ed0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="bcV-H1-TNZ" customClass="TabBarWithCorners" customModule="ThemingTest" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.0" green="0.1686274707" blue="0.49803921579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -81,11 +184,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="header line" width="1024" height="115"/>
         <image name="ico_dosar" width="24" height="24"/>
         <image name="ico_dosar_act" width="24" height="24"/>
         <image name="ico_home" width="24" height="24"/>
         <image name="ico_home_act" width="24" height="24"/>
         <image name="ico_stat" width="24" height="24"/>
+        <image name="logo_universal" width="180" height="180"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841BF0A82726E16F0052192F /* Raleway in Resources */ = {isa = PBXBuildFile; fileRef = 841BF0A72726E16F0052192F /* Raleway */; };
 		841F8202271D681600388058 /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F8201271D681600388058 /* CustomTabbar.swift */; };
 		84D88F4F271AE60700601E97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D88F4E271AE60700601E97 /* AppDelegate.swift */; };
 		84D88F51271AE60700601E97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D88F50271AE60700601E97 /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841BF0A72726E16F0052192F /* Raleway */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Raleway; sourceTree = "<group>"; };
 		841F8201271D681600388058 /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		84D88F4B271AE60700601E97 /* ThemingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThemingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D88F4E271AE60700601E97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841BF0AA2727FDF20052192F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				841BF0A72726E16F0052192F /* Raleway */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		84D88F42271AE60700601E97 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		84D88F4D271AE60700601E97 /* ThemingTest */ = {
 			isa = PBXGroup;
 			children = (
+				841BF0AA2727FDF20052192F /* Fonts */,
 				84D88F4E271AE60700601E97 /* AppDelegate.swift */,
 				84D88F50271AE60700601E97 /* SceneDelegate.swift */,
 				84D88F52271AE60700601E97 /* ViewController.swift */,
@@ -127,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841BF0A82726E16F0052192F /* Raleway in Resources */,
 				84D88F5B271AE60800601E97 /* LaunchScreen.storyboard in Resources */,
 				84D88F58271AE60800601E97 /* Assets.xcassets in Resources */,
 				84D88F56271AE60700601E97 /* Main.storyboard in Resources */,
