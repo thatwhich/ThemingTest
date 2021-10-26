@@ -35,26 +35,26 @@
                                         <color key="highlightedColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер досара" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cic-V6-bUw" userLabel="dosar lbl">
-                                        <rect key="frame" x="20" y="113" width="155" height="16.333333333333343"/>
+                                        <rect key="frame" x="20" y="113" width="157" height="16.333333333333343"/>
                                         <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите год подачи" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="eIt-hF-Cls" userLabel="year lbl">
-                                        <rect key="frame" x="220.66666666666663" y="113" width="133.33333333333337" height="17"/>
+                                        <rect key="frame" x="197" y="113" width="157" height="17"/>
                                         <color key="tintColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="№ досара" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I6c-Kf-fFZ" userLabel="dosar fld">
-                                        <rect key="frame" x="20" y="136.33333333333334" width="155" height="34"/>
+                                        <rect key="frame" x="20" y="136.33333333333334" width="157" height="34"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Год подачи" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJU-PD-Psr" userLabel="year fld">
-                                        <rect key="frame" x="220.66666666666663" y="137" width="133.33333333333337" height="34"/>
+                                        <rect key="frame" x="197" y="137" width="157" height="34"/>
                                         <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -87,21 +87,22 @@
                                     <constraint firstAttribute="trailing" secondItem="eIt-hF-Cls" secondAttribute="trailing" constant="20" id="Cmt-5Y-iX4"/>
                                     <constraint firstItem="vzG-vG-OlK" firstAttribute="top" secondItem="MJU-PD-Psr" secondAttribute="bottom" constant="20" id="CtB-y3-TT2"/>
                                     <constraint firstItem="eIt-hF-Cls" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="25" id="D9V-fa-hRM"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="Fqq-pW-NDV"/>
                                     <constraint firstItem="RlE-jA-z1D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KZR-v9-15g" secondAttribute="leading" constant="40" id="I0s-5o-Tev"/>
+                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="trailing" secondItem="KZR-v9-15g" secondAttribute="centerX" constant="-10" id="IXW-yl-5jk"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RlE-jA-z1D" secondAttribute="trailing" constant="40" id="OVq-Us-0f3"/>
-                                    <constraint firstItem="MJU-PD-Psr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="I6c-Kf-fFZ" secondAttribute="trailing" constant="10" id="T3z-LF-4dR"/>
+                                    <constraint firstItem="MJU-PD-Psr" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="centerX" constant="10" id="OWL-dC-W50"/>
                                     <constraint firstItem="RlE-jA-z1D" firstAttribute="centerX" secondItem="KZR-v9-15g" secondAttribute="centerX" id="UaX-2R-gW2"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJU-PD-Psr" secondAttribute="trailing" constant="20" id="Zcd-Is-mN2"/>
                                     <constraint firstItem="cic-V6-bUw" firstAttribute="top" secondItem="RlE-jA-z1D" secondAttribute="bottom" constant="25" id="dqi-vc-ImP"/>
                                     <constraint firstItem="vzG-vG-OlK" firstAttribute="height" secondItem="MJU-PD-Psr" secondAttribute="height" id="fUc-6b-xnK"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="600" id="iIA-z9-fhc"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="460" id="iIA-z9-fhc"/>
                                     <constraint firstItem="cic-V6-bUw" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="jTF-h9-tqA"/>
                                     <constraint firstItem="MJU-PD-Psr" firstAttribute="top" secondItem="eIt-hF-Cls" secondAttribute="bottom" constant="7" id="l8x-dF-wh6"/>
                                     <constraint firstItem="I6c-Kf-fFZ" firstAttribute="width" secondItem="cic-V6-bUw" secondAttribute="width" id="nFr-rX-l2p"/>
-                                    <constraint firstItem="I6c-Kf-fFZ" firstAttribute="leading" secondItem="KZR-v9-15g" secondAttribute="leading" constant="20" id="qbm-ke-fez"/>
                                     <constraint firstItem="I6c-Kf-fFZ" firstAttribute="height" secondItem="MJU-PD-Psr" secondAttribute="height" id="rFo-qY-cVq"/>
                                     <constraint firstItem="MJU-PD-Psr" firstAttribute="width" secondItem="eIt-hF-Cls" secondAttribute="width" id="tlk-Uc-Tuq"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="xC7-Bi-muW"/>
-                                    <constraint firstAttribute="trailing" secondItem="MJU-PD-Psr" secondAttribute="trailing" constant="20" id="yok-LS-Asz"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>

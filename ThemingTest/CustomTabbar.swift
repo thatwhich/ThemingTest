@@ -49,6 +49,8 @@ class TabBarWithCorners: UITabBar {
         return path.cgPath
     }
     override func layoutSubviews() {
+        
+        //TODO: fix top y position when keyboard is launched
         super.layoutSubviews()
         self.isTranslucent = true
         var tabFrame = self.frame
